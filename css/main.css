@@ -2,11 +2,59 @@ html, body{
     background-color: #343d46;
 }
 
+div.planeta{
+    border-radius: 50%;
+    border: 2px solid white
+}
+
 #main{
     background-color: #49b293;
-    width: 600px;
-    height: 460px;
+    width: 800px;
+    height: 860px;
     margin: 100px auto 0 auto;
-    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-    perspective: 500px;
+/*    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);*/
 }
+
+#sol.planeta img{
+    width: 10%;
+}
+
+#mercurio.planeta img{
+    width: 5%;
+}
+
+#venus.planeta img{
+    width: 10%;
+}
+
+#tierra.planeta img{
+    width: 14%;
+}
+
+#marte.planeta img{
+    width: 7%;
+}
+
+#jupiter.planeta img{
+    width: 30%;
+}
+
+#saturno.planeta img{
+    width: 30%;
+}
+
+#urano.planeta img{
+    width: 18%;
+}
+
+#neptuno.planeta img{
+    width: 18%;
+}
+
+/*
+#sol, #mercurio, #venus, #tierra, #marte, #jupiter, #saturno, #urano, #neptuno{
+    transform: translate3d(0px, 0px, 0px);
+    transform: rotateY(-230deg) rotateX(-40deg) rotateZ(0deg);
+}
+*/
+
