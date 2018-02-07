@@ -228,7 +228,7 @@ body {
     animation-timing-function: linear;
 }
 
-/* --------------------------------------------------------------------------- planets index */
+/* --------------------------------------------------------------------------- índice de planetas */
 
 #mercurio {
     z-index: 10;
@@ -459,9 +459,9 @@ body {
 
 /* --------------------------------------------------------------------------- data */
 
-/* --------------------------------------------------------------------------- speed */
+/* --------------------------------------------------------------------------- velocidad */
 
-/* sideral years */
+/* años siderales */
 
 #mercurio .posicion,
 #mercurio .planeta,
@@ -500,8 +500,7 @@ body {
 
 #saturno .posicion,
 #saturno .planeta,
-#saturno.orbita,
-#saturno .ring {
+#saturno.orbita {
     animation-duration: 353.36998s;
 }
 
@@ -611,7 +610,7 @@ body {
     font-size: 1.47732em;
 }
 
-/* --------------------------------------------------------------------------- planet size scale sizes */
+/* --------------------------------------------------------------------------- escalas de los planetas */
 
 .scale-s #sun {
     font-size: 417.3048em;
@@ -787,7 +786,7 @@ body {
     margin-left: -0.5em;
 }
 
-/* --------------------------------------------------------------------------- size scale orbits */
+/* --------------------------------------------------------------------------- Escalas de las órbitas */
 
 .scale-s #mercurio.orbita {
     width: 441.3048em;
@@ -845,7 +844,7 @@ body {
     margin-left: -440.6524em;
 }
 
-/* Moon */
+/* Luna */
 
 .scale-s #tierra .orbita {
     width: 1em;
@@ -854,9 +853,9 @@ body {
     margin-left: -0.5em;
 }
 
-/* --------------------------------------------------------------------------- text infos data */
+/* --------------------------------------------------------------------------- info */
 
-/* --------------------------------------------------------------------------- speed */
+/* --------------------------------------------------------------------------- velocidad */
 
 .set-speed dl.infos dd span:after {
     content: 'Orbit Velocity';
@@ -898,7 +897,7 @@ body {
     content: '19,566 km/h';
 }
 
-/* --------------------------------------------------------------------------- size */
+/* --------------------------------------------------------------------------- tamaño */
 
 .set-size dl.infos dd span:after {
     content: 'Equatorial Circumference';
@@ -943,11 +942,11 @@ body {
 /* --------------------------------------------------------------------------- distance */
 
 .set-distance dl.infos dd span:after {
-    content: 'From Sun';
+    content: 'Desde el Sol';
 }
 
 .set-distance #sun dl.infos dd span:after {
-    content: 'From Earth';
+    content: 'Desde la Tierra';
 }
 
 .set-distance #sun dl.infos dd:after {
