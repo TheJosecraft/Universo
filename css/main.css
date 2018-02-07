@@ -8,4 +8,5 @@ html, body{
     height: 460px;
     margin: 100px auto 0 auto;
     transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+    perspective: 500px;
 }
