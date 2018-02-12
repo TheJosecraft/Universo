@@ -109,28 +109,27 @@ body {
 }
 
 .planet {
-  background-color: #202020;
   background-repeat: no-repeat;
   background-size: cover;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
 
-.ring {
+/*.ring {
   position: absolute;
   top: 50%;
   left: 50%;
-  border-radius: 50%; }
+  border-radius: 50%; }*/
 
-#saturn .ring {
+/*#saturn .ring {
   width: 2em;
   height: 2em;
   margin-top: -1em;
   margin-left: -1em;
   border: 0.3em solid rgba(160, 147, 130, 0.7);
   animation-iteration-count: infinite;
-  animation-timing-function: linear; }
+  animation-timing-function: linear; }*/
 
-#saturn .ring:after {
+/*#saturn .ring:after {
   border-radius: 50%;
   position: absolute;
   content: '';
@@ -142,7 +141,7 @@ body {
   margin-left: -1.1em;
   border: 0.07em solid rgba(160, 147, 130, 0.5);
   box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; }*/
 
 /* --------------------------------------------------------------------------- planets index */
 #mercury {
@@ -633,7 +632,7 @@ body {
 /* --------------------------------------------------------------------------- text infos data */
 /* --------------------------------------------------------------------------- speed */
 .set-speed dl.infos dd span:after {
-  content: 'Orbit Velocity'; }
+  content: 'Velocidad de la órbita'; }
 
 .set-speed #sun dl.infos dd:after {
   content: '0 km/h'; }
@@ -664,7 +663,7 @@ body {
 
 /* --------------------------------------------------------------------------- size */
 .set-size dl.infos dd span:after {
-  content: 'Equatorial Circumference'; }
+  content: 'Circunferencia Ecuatorial'; }
 
 .set-size #sun dl.infos dd:after {
   content: '4,370,005 km'; }
@@ -695,10 +694,10 @@ body {
 
 /* --------------------------------------------------------------------------- distance */
 .set-distance dl.infos dd span:after {
-  content: 'From Sun'; }
+  content: 'Desde el Sol'; }
 
 .set-distance #sun dl.infos dd span:after {
-  content: 'From Earth'; }
+  content: 'De la Tierra'; }
 
 .set-distance #sun dl.infos dd:after {
   content: '149,598,262 km'; }
