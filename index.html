@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Universo</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/material-design-iconic-font.min.css">
 </head>
 
 <body>
@@ -15,8 +16,8 @@
           <source src="audio/main.ogg">
       </audio>
     <div id="navbar">
-      <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
-      <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
+      <a id="toggle-data" href="#data"><i class="icon-data"></i>Datos</a>
+      <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controles</a>
     </div>
     <div id="data">
       <a class="sun" title="sun" href="#sunspeed">Sol</a>
@@ -45,13 +46,19 @@
         <input type="radio" class="set-distance" name="scale">
         <span>Distancia</span>
       </label>
-      <label>
-        <input type="radio" class="mute" name="mute">
+      <label class="mute">
+        <i class="zmdi zmdi-volume-up zmdi-hc-3x icono-mute"></i>
         <span>Silenciar</span>
       </label>
     </div>
 
     <div id="particles-js"></div>
+    <div id="info-planeta">
+      <div class="fondo">
+        
+      </div>
+      <a href="#cerrar" class="cerrar"><i class="zmdi zmdi-close zmdi-hc-3x"></i></a>
+    </div>
     <div id="universe" class="scale-stretched">
       <div id="galaxy">
         <div id="solar-system" class="earth">
@@ -113,7 +120,6 @@
           <div id="saturn" class="orbit">
             <div class="pos">
               <div class="planet">
-                <div class="ring"></div>
                 <dl class="infos">
                   <dt>Saturno</dt>
                   <dd><span></span></dd>

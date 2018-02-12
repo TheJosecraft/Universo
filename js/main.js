@@ -43,12 +43,19 @@ $(document).ready(function(){
 	});
 
 	$(".mute").click(function(){
-		if(this.value == "on"){
-			$("[name=mute]").prop("checked", true);
-			console.log(this.value);
-		}else{
-			$("[name=mute]").prop("checked", false);
-			console.log(this.value);
-		}
+		var bool = $("audio").prop("muted");
+    $("audio").prop("muted", !bool);
+    if (bool == false) {
+      $(".icono-mute").removeClass("zmdi-volume-up").addClass("zmdi-volume-off")
+    }else{
+      $(".icono-mute").removeClass("zmdi-volume-off").addClass("zmdi-volume-up")
+    }
 	});
+
+  $(".cerrar").click(function(event){
+    event.preventDefault();
+    $("#info-planeta").animate({opacity: 0}, {duration:1000, complete:function(){
+      this.css("visibility", "hidden");
+    }});
+  })
 });
