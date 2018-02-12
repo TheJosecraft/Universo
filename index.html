@@ -10,6 +10,10 @@
 <body>
 
     <body class="opening hide-UI view-2D zoom-large data-close controls-close">
+      <audio autoplay loop>
+        <source src="audio/main.ogg">
+          <source src="audio/main.ogg">
+      </audio>
     <div id="navbar">
       <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
       <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
@@ -40,6 +44,10 @@
       <label>
         <input type="radio" class="set-distance" name="scale">
         <span>Distancia</span>
+      </label>
+      <label>
+        <input type="radio" class="mute" name="mute">
+        <span>Silenciar</span>
       </label>
     </div>
 
@@ -142,14 +150,6 @@
         </div>
       </div>
     </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript">
-    if (typeof jQuery == 'undefined') { 
-      document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
-    }
-    </script>
-    <script src="js/prefixfree.min.js"></script>
-    <script src="js/scripts.min.js"></script>
   </body>
   <script src='js/jquery-3.3.1.min.js'></script>
 <script src="js/particles.min.js"></script>

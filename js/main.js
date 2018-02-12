@@ -37,8 +37,18 @@ $(document).ready(function(){
   $(".set-distance").click(function() { setView("scale-d set-distance"); });
 
   init();
-  
+
 	$("#earth").click(function(){
 		console.log("Tierra");
+	});
+
+	$(".mute").click(function(){
+		if(this.value == "on"){
+			$("[name=mute]").prop("checked", true);
+			console.log(this.value);
+		}else{
+			$("[name=mute]").prop("checked", false);
+			console.log(this.value);
+		}
 	});
 });
