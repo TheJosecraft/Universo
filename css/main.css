@@ -487,11 +487,17 @@ body {
   margin-top: -36em;
   margin-left: -36em; }
 
+.scale-stretched #asteroid.orbit {
+  width: 90em;
+  height: 90em;
+  margin-top: -45em;
+  margin-left: -45em; }
+
 .scale-stretched #jupiter.orbit {
-  width: 100em;
-  height: 100em;
-  margin-top: -50em;
-  margin-left: -50em; }
+  width: 125em;
+  height: 125em;
+  margin-top: -63em;
+  margin-left: -63em; }
 
 .scale-stretched #saturn.orbit {
   width: 150em;

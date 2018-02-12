@@ -58,4 +58,54 @@ $(document).ready(function(){
       this.css("visibility", "hidden");
     }});
   })
+
+
+  var datos = [{
+  	"planeta":"Tierra",
+  	"Tamaño":"120km",
+  	"Descripción":"Lorem"
+  },
+  {
+  	"planeta":"Tierra",
+  	"Tamaño":"120km",
+  	"Descripción":"Lorem"
+  },
+  {
+  	"planeta":"Tierra",
+  	"Tamaño":"120km",
+  	"Descripción":"Lorem"
+  },
+  {
+  	"planeta":"Tierra",
+  	"Tamaño":"120km",
+  	"Descripción":"Lorem"
+  },
+  {
+  	"planeta":"Tierra",
+  	"Tamaño":"120km",
+  	"Descripción":"Lorem"
+  },
+  {
+  	"planeta":"Tierra",
+  	"Tamaño":"120km",
+  	"Descripción":"Lorem"
+  },
+  {
+  	"planeta":"Tierra",
+  	"Tamaño":"120km",
+  	"Descripción":"Lorem"
+  },
+  {
+  	"planeta":"Tierra",
+  	"Tamaño":"120km",
+  	"Descripción":"Lorem"
+  },
+  {
+  	"planeta":"Tierra",
+  	"Tamaño":"120km",
+  	"Descripción":"Lorem"
+  },]
+
+  console.log(datos);
+
 });
