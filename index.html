@@ -12,23 +12,27 @@
 
     <body class="opening hide-UI view-2D zoom-large data-close controls-close">
       <audio autoplay loop>
-        <source src="audio/main.ogg">
-          <source src="audio/main.ogg">
+        <source src="audio/starwaves.ogg">
+          <source src="audio/starwaves.ogg">
       </audio>
+    <div id="inicio">
+      <a href="#cerrar" class="cerrar"><i class="zmdi zmdi-close zmdi-hc-3x"></i></a>
+      <video src="video/planetas.mp4" autoplay></video>
+    </div>
     <div id="navbar">
       <a id="toggle-data" href="#data"><i class="icon-data"></i>Datos</a>
       <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controles</a>
     </div>
     <div id="data">
-      <a class="sun" title="sun" href="#sunspeed">Sol</a>
-      <a class="mercury" title="mercury" href="#mercuryspeed">Mercurio</a>
-      <a class="venus" title="venus" href="#venusspeed">Venus</a>
-      <a class="earth active" title="earth" href="#earthspeed">Tierra</a>
-      <a class="mars" title="mars" href="#marsspeed">Marte</a>
-      <a class="jupiter" title="jupiter" href="#jupiterspeed">Jupiter</a>
-      <a class="saturn" title="saturn" href="#saturnspeed">Saturno</a>
-      <a class="uranus" title="uranus" href="#uranusspeed">Urano</a>
-      <a class="neptune" title="neptune" href="#neptunespeed">Neptuno</a>
+      <a class="sun" id="planeta0" title="sun" href="#sunspeed">Sol</a>
+      <a class="mercury" id="planeta1" title="mercury" href="#mercuryspeed">Mercurio</a>
+      <a class="venus" id="planeta2" title="venus" href="#venusspeed">Venus</a>
+      <a class="earth active" id="planeta3" title="earth" href="#earthspeed">Tierra</a>
+      <a class="mars" id="planeta4" title="mars" href="#marsspeed">Marte</a>
+      <a class="jupiter" id="planeta5" title="jupiter" href="#jupiterspeed">Jupiter</a>
+      <a class="saturn" id="planeta6" title="saturn" href="#saturnspeed">Saturno</a>
+      <a class="uranus" id="planeta7" title="uranus" href="#uranusspeed">Urano</a>
+      <a class="neptune" id="planeta8" title="neptune" href="#neptunespeed">Neptuno</a>
     </div>
     <div id="controls">
       <label class="set-zoom">
@@ -55,9 +59,10 @@
     <div id="particles-js"></div>
     <div id="info-planeta">
       <div class="fondo">
-        
       </div>
-      <a href="#cerrar" class="cerrar" onclick="javascript:toggleFullScreen()"><i class="zmdi zmdi-close zmdi-hc-3x"></i></a>
+      <h1 id="nombre">Nombre: </h1>
+      <h1 id="desc">Descripción: </h1>
+      <a href="#cerrar" class="cerrar"><i class="zmdi zmdi-close zmdi-hc-3x"></i></a>
     </div>
     <div id="universe" class="scale-stretched">
       <div id="galaxy">
