@@ -10,7 +10,7 @@ $(document).ready(function() {
         {
             "planeta": "Mercurio",
             "tam": "120km",
-            "descripcion": "Lorem"
+            "descripcion": "Mercurio es el planeta del sistema solar más próximo al Sol y el más pequeño. Forma parte de los denominados planetas interiores o terrestres y carece de satélites naturales al igual que Venus. Se conocía muy poco sobre su superficie hasta que fue enviada la sonda planetaria Mariner 10 y se hicieron observaciones con radar y radiotelescopios."
         },
         {
             "planeta": "Venus",
