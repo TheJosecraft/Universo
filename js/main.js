@@ -1,7 +1,8 @@
 $(document).ready(function() {
     var body = $("body"),
         universe = $("#universe"),
-        solarsys = $("#solar-system");
+        solarsys = $("#solar-system"),
+        video = $("video");
     var datos = [{
             "planeta": "Sol",
             "tam": "120km",
@@ -114,6 +115,9 @@ $(document).ready(function() {
         });
     });
 
+    $('video').click(function(){
+    this[this.paused ? 'play' : 'pause']();
+    });
     console.log(datos);
 
 });

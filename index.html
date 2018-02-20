@@ -1,174 +1,175 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Universo</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/material-design-iconic-font.min.css">
+    <meta charset="UTF-8">
+    <title>Universo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/material-design-iconic-font.min.css">
 </head>
-
-<body>
-
-    <body class="opening hide-UI view-2D zoom-large data-close controls-close">
-      <audio autoplay loop>
-        <source src="audio/starwaves.ogg">
-          <source src="audio/starwaves.ogg">
-      </audio>
-    <div id="inicio">
-      <a href="#cerrar" class="cerrar"><i class="zmdi zmdi-close zmdi-hc-3x"></i></a>
-      <video src="video/planetas.mp4" autoplay></video>
+<div id="inicio">
+    <a href="#cerrar" class="cerrar"><i class="zmdi zmdi-close zmdi-hc-3x"></i></a>
+    <video src="video/planetas.mp4" autoplay></video>
+    <div class="contenido">
+        <h1>Heading</h1>
+        <p>Lorem ipsum...</p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="pausar">Pause</button>
     </div>
+</div>
+
+<body class="opening hide-UI view-2D zoom-large data-close controls-close">
+    <audio autoplay loop>
+        <source src="audio/starwaves.ogg">
+        <source src="audio/starwaves.ogg">
+    </audio>
     <div id="navbar">
-      <a id="toggle-data" href="#data"><i class="icon-data"></i>Datos</a>
-      <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controles</a>
+        <a id="toggle-data" href="#data"><i class="icon-data"></i>Datos</a>
+        <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controles</a>
     </div>
     <div id="data">
-      <a class="sun" id="planeta0" title="sun" href="#sunspeed">Sol</a>
-      <a class="mercury" id="planeta1" title="mercury" href="#mercuryspeed">Mercurio</a>
-      <a class="venus" id="planeta2" title="venus" href="#venusspeed">Venus</a>
-      <a class="earth active" id="planeta3" title="earth" href="#earthspeed">Tierra</a>
-      <a class="mars" id="planeta4" title="mars" href="#marsspeed">Marte</a>
-      <a class="jupiter" id="planeta5" title="jupiter" href="#jupiterspeed">Jupiter</a>
-      <a class="saturn" id="planeta6" title="saturn" href="#saturnspeed">Saturno</a>
-      <a class="uranus" id="planeta7" title="uranus" href="#uranusspeed">Urano</a>
-      <a class="neptune" id="planeta8" title="neptune" href="#neptunespeed">Neptuno</a>
+        <a class="sun" id="planeta0" title="sun" href="#sunspeed">Sol</a>
+        <a class="mercury" id="planeta1" title="mercury" href="#mercuryspeed">Mercurio</a>
+        <a class="venus" id="planeta2" title="venus" href="#venusspeed">Venus</a>
+        <a class="earth active" id="planeta3" title="earth" href="#earthspeed">Tierra</a>
+        <a class="mars" id="planeta4" title="mars" href="#marsspeed">Marte</a>
+        <a class="jupiter" id="planeta5" title="jupiter" href="#jupiterspeed">Jupiter</a>
+        <a class="saturn" id="planeta6" title="saturn" href="#saturnspeed">Saturno</a>
+        <a class="uranus" id="planeta7" title="uranus" href="#uranusspeed">Urano</a>
+        <a class="neptune" id="planeta8" title="neptune" href="#neptunespeed">Neptuno</a>
     </div>
     <div id="controls">
-      <label class="set-zoom">
-        <input type="checkbox">
-      </label>
-      <label>
-        <input type="radio" class="set-speed" name="scale" checked>
-        <span>Velocidad</span>
-      </label>
-      <label>
-        <input type="radio" class="set-size" name="scale">
-        <span>Tamaño</span>
-      </label>
-      <label>
-        <input type="radio" class="set-distance" name="scale">
-        <span>Distancia</span>
-      </label>
-      <label class="mute">
-        <i class="zmdi zmdi-volume-up zmdi-hc-3x icono-mute"></i>
-        <span>Silenciar</span>
-      </label>
+        <label class="set-zoom">
+            <input type="checkbox">
+        </label>
+        <label>
+            <input type="radio" class="set-speed" name="scale" checked>
+            <span>Velocidad</span>
+        </label>
+        <label>
+            <input type="radio" class="set-size" name="scale">
+            <span>Tamaño</span>
+        </label>
+        <label>
+            <input type="radio" class="set-distance" name="scale">
+            <span>Distancia</span>
+        </label>
+        <label class="mute">
+            <i class="zmdi zmdi-volume-up zmdi-hc-3x icono-mute"></i>
+            <span>Silenciar</span>
+        </label>
     </div>
-
     <div id="particles-js"></div>
     <div id="info-planeta">
-      <div class="fondo">
-      </div>
-      <h1 id="nombre">Nombre: </h1>
-      <h1 id="desc">Descripción: </h1>
-      <a href="#cerrar" class="cerrar"><i class="zmdi zmdi-close zmdi-hc-3x"></i></a>
+        <div class="fondo">
+        </div>
+        <h1 id="nombre">Nombre: </h1>
+        <h1 id="desc">Descripción: </h1>
+        <a href="#cerrar" class="cerrar"><i class="zmdi zmdi-close zmdi-hc-3x"></i></a>
     </div>
     <div id="universe" class="scale-stretched">
-      <div id="galaxy">
-        <div id="solar-system" class="earth">
-          <div id="mercury" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Mercurio</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="venus" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Venus</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="earth" class="orbit">
-            <div class="pos">
-              <div class="orbit">
-                <div class="pos">
-                  <div class="moon"></div>
+        <div id="galaxy">
+            <div id="solar-system" class="earth">
+                <div id="mercury" class="orbit">
+                    <div class="pos">
+                        <div class="planet">
+                            <dl class="infos">
+                                <dt>Mercurio</dt>
+                                <dd><span></span></dd>
+                            </dl>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Tierra</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
+                <div id="venus" class="orbit">
+                    <div class="pos">
+                        <div class="planet">
+                            <dl class="infos">
+                                <dt>Venus</dt>
+                                <dd><span></span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="earth" class="orbit">
+                    <div class="pos">
+                        <div class="orbit">
+                            <div class="pos">
+                                <div class="moon"></div>
+                            </div>
+                        </div>
+                        <div class="planet">
+                            <dl class="infos">
+                                <dt>Tierra</dt>
+                                <dd><span></span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="mars" class="orbit">
+                    <div class="pos">
+                        <div class="planet">
+                            <dl class="infos">
+                                <dt>Marte</dt>
+                                <dd><span></span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="asteroid" class="orbit">
+                </div>
+                <div id="jupiter" class="orbit">
+                    <div class="pos">
+                        <div class="planet">
+                            <dl class="infos">
+                                <dt>Jupiter</dt>
+                                <dd><span></span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="saturn" class="orbit">
+                    <div class="pos">
+                        <div class="planet">
+                            <dl class="infos">
+                                <dt>Saturno</dt>
+                                <dd><span></span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="uranus" class="orbit">
+                    <div class="pos">
+                        <div class="planet">
+                            <dl class="infos">
+                                <dt>Urano</dt>
+                                <dd><span></span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="neptune" class="orbit">
+                    <div class="pos">
+                        <div class="planet">
+                            <dl class="infos">
+                                <dt>Neptuno</dt>
+                                <dd><span></span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="sun">
+                    <dl class="infos">
+                        <dt>Sol</dt>
+                        <dd><span></span></dd>
+                    </dl>
+                </div>
             </div>
-          </div>
-          <div id="mars" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Marte</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="asteroid" class="orbit">
-            
-          </div>
-          <div id="jupiter" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Jupiter</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="saturn" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Saturno</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="uranus" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Urano</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="neptune" class="orbit">
-            <div class="pos">
-              <div class="planet">
-                <dl class="infos">
-                  <dt>Neptuno</dt>
-                  <dd><span></span></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div id="sun">
-            <dl class="infos">
-              <dt>Sol</dt>
-              <dd><span></span></dd>
-            </dl>
-          </div>
         </div>
-      </div>
     </div>
-  </body>
-  <script src='js/jquery-3.3.1.min.js'></script>
+</body>
+<script src='js/jquery-3.3.1.min.js'></script>
 <script src="js/particles.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/main.js"></script>
-</body>
 
 </html>

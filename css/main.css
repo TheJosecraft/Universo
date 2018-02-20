@@ -1550,8 +1550,11 @@ h1 {
 }
 
 video{
-  width: 100%;
-  height: auto;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
 }
 
 #info-planeta h1{
@@ -1560,4 +1563,33 @@ video{
 }
 #desc{
   margin-top: 45px;
+}
+
+html{
+  overflow: hidden;
+}
+
+.contenido{
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#pausar {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#pausar:hover {
+    background: #ddd;
+    color: black;
 }
