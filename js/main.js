@@ -115,6 +115,17 @@ $(document).ready(function() {
         });
     });
 
+    $("#cerrarVideo").click(function(event) {
+        event.preventDefault();
+        $("#inicio").animate({ opacity: 0 }, {
+            duration: 1000,
+            complete: function() {
+                $("#inicio").hide();
+                video.pause;
+            }
+        });
+    });
+
     $('video').click(function(){
     this[this.paused ? 'play' : 'pause']();
     });
