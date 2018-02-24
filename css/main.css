@@ -1535,7 +1535,7 @@ h1 {
 }
 
 #info-planeta .fondo{
-  opacity: 0.2;
+  opacity: 0.1;
   background-color: lightgray;
   width: 100%;
   height: 100%;
@@ -1563,10 +1563,15 @@ video{
 }
 #desc{
   margin-top: 45px;
+<<<<<<< HEAD
+=======
+  line-height: 1.25;
+>>>>>>> 6a022e3a05c7080f40e7b70be812e2e053e9b7b1
 }
 
 html{
   overflow: hidden;
+<<<<<<< HEAD
 }
 
 .contenido{
@@ -1592,4 +1597,6 @@ html{
 #pausar:hover {
     background: #ddd;
     color: black;
+=======
+>>>>>>> 6a022e3a05c7080f40e7b70be812e2e053e9b7b1
 }
