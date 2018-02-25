@@ -2,7 +2,8 @@ $(document).ready(function() {
     var body = $("body"),
         universe = $("#universe"),
         solarsys = $("#solar-system"),
-        video = $("video");
+        video = $("video"),
+        tituloInicio = $("#tituloInicio");
     var datos = [{
             "planeta": "Sol",
             "tam": "120km",
@@ -50,6 +51,11 @@ $(document).ready(function() {
         }
     ];
     $("#info-planeta").hide()
+
+    tituloInicio.delay(9000).slideUp().queue(function(n){
+        $(this).text("Ahora puedes hacerlo, tan sólo haz click en cerrar").slideDown();
+        n();
+    })
 
     var init = function() {
         body.removeClass('opening').delay(2000).queue(function() {
