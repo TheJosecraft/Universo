@@ -223,40 +223,7 @@ body {
 	animation-timing-function: linear;
 }
 
-
-/*.ring {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%; }*/
-
-
-/*#saturn .ring {
-  width: 2em;
-  height: 2em;
-  margin-top: -1em;
-  margin-left: -1em;
-  border: 0.3em solid rgba(160, 147, 130, 0.7);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }*/
-
-
-/*#saturn .ring:after {
-  border-radius: 50%;
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 50%;
-  width: 2.2em;
-  height: 2.2em;
-  margin-top: -1.1em;
-  margin-left: -1.1em;
-  border: 0.07em solid rgba(160, 147, 130, 0.5);
-  box-sizing: border-box;
-  box-sizing: border-box; }*/
-
-
-/* --------------------------------------------------------------------------- planets index */
+/* --------------------------------------------------------------------------- índice de planetas */
 
 #mercury {
 	z-index: 10;
@@ -299,7 +266,7 @@ body {
 }
 
 
-/* --------------------------------------------------------------------------- animations */
+/* --------------------------------------------------------------------------- animaciones */
 
 @keyframes orbit {
 	0% {
@@ -332,7 +299,7 @@ body {
 }
 
 
-/* --------------------------------------------------------------------------- opening */
+/* --------------------------------------------------------------------------- inicio */
 
 .view-3D .opening #sun,
 .view-3D .opening .orbit,
@@ -348,7 +315,7 @@ body {
 }
 
 
-/* --------------------------------------------------------------------------- 2D view */
+/* --------------------------------------------------------------------------- vista */
 
 .view-2D.zoom-large #sun {
 	transform-style: flat;
@@ -367,35 +334,6 @@ body {
 .view-2D .moon {
 	transform: rotateX(90deg);
 }
-
-
-/* --------------------------------------------------------------------------- 3D view */
-
-.view-3D.zoom-large #sun {
-	transform-style: preserve-3d;
-}
-
-.view-3D.zoom-large .orbit {
-	transform-style: preserve-3d;
-}
-
-.view-3D #solar-system {
-	transform: rotateX(75deg);
-}
-
-.view-3D #sun {
-	transform: rotateX(-90deg);
-}
-
-.view-3D .ring {
-	transform: rotateX(90deg);
-}
-
-.view-3D .planet,
-.view-3D .moon {
-	transform: rotateX(0deg);
-}
-
 
 /* --------------------------------------------------------------------------- large zoom */
 
@@ -428,7 +366,7 @@ body {
 }
 
 
-/* --------------------------------------------------------------------------- close zoom */
+/* --------------------------------------------------------------------------- cerrar zoom */
 
 .zoom-close #solar-system {
 	width: 200%;
@@ -495,7 +433,7 @@ body {
 /* --------------------------------------------------------------------------- data */
 
 
-/* --------------------------------------------------------------------------- speed */
+/* --------------------------------------------------------------------------- velocidad */
 
 
 /* sideral years */
@@ -772,8 +710,6 @@ body {
 }
 
 
-/* --------------------------------------------------------------------------- scaled orbits */
-
 
 /* --------------------------------------------------------------------------- distance scale orbits */
 
@@ -913,10 +849,10 @@ body {
 }
 
 
-/* --------------------------------------------------------------------------- text infos data */
+/* --------------------------------------------------------------------------- texto de información */
 
 
-/* --------------------------------------------------------------------------- speed */
+/* --------------------------------------------------------------------------- velocidad */
 
 .set-speed dl.infos dd span:after {
 	content: 'Velocidad de la órbita';
@@ -1049,7 +985,7 @@ body {
 }
 
 
-/* --------------------------------------------------------------------------- planets starting position and lighting effect */
+/* --------------------------------------------------------------------------- posición de inicio de los planetas */
 
 
 /* --------------------------------------------------------------------------- mercury ; pos: Top */
@@ -1820,7 +1756,7 @@ h1 span,
 }
 
 
-/* --------------------------------------------------------------------------- transitions */
+/* --------------------------------------------------------------------------- transiciones */
 .pos {
 	transition-property: top, left;
 }
@@ -1946,7 +1882,7 @@ h1 {
 }
 
 
-/* --------------------------------------------------------------------------- responsive styles */
+/* --------------------------------------------------------------------------- responsividad */
 @media screen and (max-width: 299px) {
 	#universe {
 		font-size: 20%;
@@ -2033,7 +1969,6 @@ h1 {
 	}
 }
 
-/* ---- reset ---- */
 #particles-js {
 	position: absolute;
 	width: 100%;
@@ -2056,8 +1991,8 @@ h1 {
 
 #info-planeta {
 	z-index: 90;
-	width: 30%;
-	height: 30%;
+	width: 37%;
+	height: 37%;
 	margin: auto;
 	position: absolute;
 }
@@ -2103,6 +2038,9 @@ video {
 #desc {
 	margin-top: 45px;
 	line-height: 1.25;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 html {
@@ -2119,7 +2057,7 @@ html {
 }
 
 
-/* Style the button used to pause/play the video */
+/* Pausar el video */
 .botonVideo {
 	width: 200px;
 	font-size: 18px;
